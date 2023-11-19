@@ -107,7 +107,7 @@ const Homepage = (
           <button onClick={() => clientSideLanguageChange(changeTo)}>
             {t('change-locale', { changeTo })}
           </button> */}
-          <Link href="/second-page">
+          <Link href="/web3">
             <button type="button">{t('to-second-page')}</button>
           </Link>
         </div>
