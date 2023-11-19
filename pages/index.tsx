@@ -7,6 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import {delay} from "@/utils";
 
 type Props = {
   // Add custom props here
@@ -20,6 +21,7 @@ const Homepage = (
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onToggleLanguageClick = (newLocale: string) => {
+    delay(1000);
     const { pathname, asPath, query } = router
     router.push({ pathname, query }, asPath, { locale: newLocale })
   }
